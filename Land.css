@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f4f4;
+}
+@keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+   }
+   .slider {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+  }
+.slider .slide:nth-child(1) {
+    background-image: url("https://media.wired.com/photos/6580ba9fc9d019ec4391c2b9/master/pass/Reuelto_Grigio%20Telesto_001.jpg");
+    animation-delay: 0;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url("https://media.zenfs.com/en/robb_report_967/b1cb857f0dbfd66300d13c051fe5fc4b");
+    animation-delay: -2s;
+  }
+  
+  .slider .slide:nth-child(3) {
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/2022-lamborghini-aventador-109-1625607587.jpg");
+    animation-delay: -4s;
+  }
+  
+  .slider .slide:nth-child(4) {
+    background-image: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/few_off/sian-fkp-37/2023/over_d.jpg");
+    animation-delay: -6s;
+  }
+  
+  .slider .slide:nth-child(5) {
+    background-image: url("https://storage.googleapis.com/pod_public/1300/176804.jpg");
+    animation-delay: -8s;
+  }
+.header {
+    color: white;
+    text-align: center;
+    display: block;
+    unicode-bidi: isolate;
+}
+.menu{
+    padding: 0px;
+}
+.menu-ul li{
+    display: inline-block;
+    color: black;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    padding: 7px 23px;
+}
+a{
+    border-bottom: 1px solid transparent;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid black;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin: 0 0 40px 0;
+}
+
+.header .cta-button {
+    background: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 4.3em;
+    letter-spacing: -4px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.introduction, .features, .testimonials, .cta {
+    padding:  0;
+}
+
+.introduction .container, .features .container, .testimonials .container, .cta .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduction img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.introduction p {
+    font-size: 25px;
+}
+
+.features .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.features .feature-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+}
+
+.features .feature-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+.features .feature-item h3 {
+    margin: 10px 0;
+}
+
+.testimonials .testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonials .testimonial-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+}
+
+.testimonials .testimonial-item p {
+    margin: 10px 0;
+}
+
+.testimonials .testimonial-item .author {
+    font-weight: bold;
+}
+
+.cta {
+    background: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta .cta-button {
+    background: white;
+    color: #ff6347;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .features .feature-item, .testimonials .testimonial-item {
+        flex: 1 1 100%;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .header .cta-button, .cta .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
