@@ -1,22 +1,31 @@
 # Development-of-Car-Launch-Event-Landing-Page
-Create a visually appealing and functional landing page for a car launch event,  including a slider, introduction, key features, testimonials, and a call-to-action  (CTA). Ensure smooth animations and responsive design using HTML, CSS, and  JavaScript.
+Create a visually appealing and functional landing page for a car launch event,  including a slider, introduction, key features, testimonials, and a call-to-action  (CTA). Ensure smooth animations and responsive design using HTML, CSS, and  JavaScript.   
+
 **1. HTML Structure:**
  - Created the basic HTML structure with semantic elements.
  - Included sections for the header, slider, introduction, features, testimonials, 
 CTA, and footer.
-**2. CSS Styling:**
+
+**2. CSS Styling:**   
+
  - Designed a modern and responsive layout.
  - Implemented key animations for the slider using CSS keyframes.
  - Ensured consistent styling across different screen sizes using media queries.
  - Styled each section to maintain visual consistency and appeal.
-**3. JavaScript Integration:**
+   
+**3. JavaScript Integration:**   
+
  - Integrated AOS (Animate On Scroll) library for smooth scroll animations.
  - Added a script to initialize AOS with custom duration settings.
-**4. Responsive Design:**
+    
+**4. Responsive Design:**   
+
  - Ensured the page is fully responsive and works seamlessly on various devices.
  - Utilized flexible layouts and media queries to adjust the design based on 
 screen size.
-**5. Content Integration:**
+ 
+**5. Content Integration:**   
+
  - Added placeholder content for the car launch event, including images, text, 
 and icons.
  - Ensured the content is structured in a user-friendly manner, highlighting key 
